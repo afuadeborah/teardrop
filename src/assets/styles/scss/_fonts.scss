@@ -1,0 +1,30 @@
+// Import fonts
+@mixin font-base {
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../fonts/Helvetica.ttf');
+    font-weight: normal;
+    @include font-base;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../fonts/Helvetica-Bold.ttf');
+    font-weight: bold;
+    @include font-base;
+}
+
+@font-face {
+    font-family: 'Helvetica-Oblique';
+    src: url('../../fonts/Helvetica-Oblique.ttf');
+    font-weight: normal;
+    @include font-base;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+}
