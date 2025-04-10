@@ -1,0 +1,20 @@
+// Layout
+.double-border {
+    border: 5px solid $indigo;
+    padding: 10px;
+    position: relative;
+    border-radius: 20px;
+    max-width: 800px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -25px;
+        left: 18px;
+        right: 18px;
+        bottom: -25px;
+        border: 5px solid $indigo;
+        border-radius: 20px;
+        pointer-events: none;
+    }
+}

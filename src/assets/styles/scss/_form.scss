@@ -1,0 +1,94 @@
+// Bootstrap Form Styling Overrides
+form {
+    padding: 3.5rem;
+
+    .form-group {
+        text-align: left;
+    }
+
+    .form-label {
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        letter-spacing: -10%;
+    }
+
+    .form-text {
+        font-family: 'Helvetica-Oblique';
+        font-size: 1.12rem;
+    }
+
+    .text-input {
+        width: 12.5rem;
+    }
+
+    .color-input {
+        width: 6.25rem;
+        cursor: pointer;
+    }
+
+    .range-input {
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+    }
+
+    // Styling range inputs for Chrome, Safari, Opera, and Edge Chromium + Firefox
+    // separated moz/webkit to ensure styling was applied
+
+    input[type="range"]::-webkit-slider-runnable-track {
+        background: $white;
+        height: 0.3rem;
+    }
+
+    input[type="range"]::-moz-range-track {
+        background: $white;
+        height: 0.3rem;
+    }
+
+    // Customizing slider across browsers
+    // Firefox
+    input[type="range"]::-moz-range-thumb {
+        // Removes extra border that FF applies
+        background-color: $accent-green;
+        border-radius: 50%;
+
+    }
+
+    // Chrome, Safari, Opera, and Edge Chromium 
+    input[type="range"]::-webkit-slider-thumb {
+        /* Override default look */
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: $accent-green;
+        margin-top: -6px;
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .form-check {
+        text-align: right;
+    }
+
+    .form-check-input {
+        margin-left: -2em;
+
+        &:checked {
+            background-color: $accent-green;
+            border-color: $accent-green;
+        }
+    }
+
+    .form-group-container {
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        .form-check {
+            text-align: left;
+        }
+    }
+}
