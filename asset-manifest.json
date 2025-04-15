@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/teardrop/static/css/main.942ad28b.css",
+    "main.js": "/teardrop/static/js/main.7f97feb7.js",
+    "static/media/Helvetica-Oblique.ttf": "/teardrop/static/media/Helvetica-Oblique.5c03f243e475af718145.ttf",
+    "static/media/Helvetica.ttf": "/teardrop/static/media/Helvetica.06113bf748ae7dc33e05.ttf",
+    "static/media/Helvetica-Bold.ttf": "/teardrop/static/media/Helvetica-Bold.ed57aca7292971d8548c.ttf",
+    "index.html": "/teardrop/index.html",
+    "main.942ad28b.css.map": "/teardrop/static/css/main.942ad28b.css.map",
+    "main.7f97feb7.js.map": "/teardrop/static/js/main.7f97feb7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.942ad28b.css",
+    "static/js/main.7f97feb7.js"
+  ]
+}
