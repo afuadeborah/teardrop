@@ -1,6 +1,6 @@
 // Homepage
-.heading, 
-.homepage-content span,
+.heading,
+.homepage-content strong,
 .link-button {
     font-weight: bold;
     font-style: italic;
@@ -25,6 +25,18 @@
         &:hover {
             background-color: $accent-green;
             color: $body-bg;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .homepage-content {
+        p {
+            font-size: 1.2rem;
         }
     }
 }
