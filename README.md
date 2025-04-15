@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Tear(Drop)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a multiscreen experience in which users are encouraged to interact with the Control form and reflect on impactful experiences in their lives and their visualization in the Display.
 
-## Available Scripts
+Each form input manipulates the display in some way that's relevant to the elements of the user's experience.
 
-In the project directory, you can run:
+This is an MVP iteration, I'd like to add other interactive elements in the future. This is an interactive/visual compliment that came to me while working on a written piece.
 
-### `npm start`
+[Tear(Drop) Homepage](teardrop/src/assets/images/teardrop-homepage.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Tear(Drop) Control Form](teardrop/src/assets/images/teardrop-form.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Tear(Drop) Display](teardrop/src/assets/images/teardrop-display.png)
 
-### `npm test`
+## Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   React, React Router
+-   [particle.js](https://github.com/VincentGarreau/particles.js) library by Vincent Garreau for the display
+-   SASS + Bootstrap
+-   Firebase for real-time updating of the display based on the user's input
 
-### `npm run build`
+### Planning
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Tear(Drop) Diagram in Figjam](teardrop/src/assets/images/teardrop-planning.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The usage goal was:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   User enters data into input (text, radio, range)
+-   Value gets passed into state in order to be used across pages and in Firebase
+-   Particles display updates config json object to pass in values entered in as per config settings
+    -   This was initially in its own file, but because I wanted this to be a real-time update, I moved the config into the Display component for Firebase to listen to any changes
+-   Each config had its own intention and meaning which is reflected in how the display changes (more intense experiences increase the density and speed of the particles, events experienced alone see individual particles vs particles connected with lines etc.)
 
-### `npm run eject`
+## What's Next?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   I'd like to include a projection mapping addition that tracks the user's eye movement via webcam functionality
+-   Writing tests to ensure inputs expect and accept the correct input

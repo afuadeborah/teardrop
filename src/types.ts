@@ -10,12 +10,20 @@ export type ControlFormInputs = {
 }
 
 export enum OnHoverBehaviour {
-    'Repulse',
-    'Grab',
-    'None'
+    Repulse = 'repulse',
+    Grab = 'grab',
+    None = 'none'
 }
 
 export enum ConnectingLineOptions {
-    'Alone',
-    'Others'
+    Alone = 'alone',
+    Others = 'others'
+}
+
+// Declaring type in order for particleJS to be recognized on the window object
+declare global {
+    interface Window {
+        particlesJS: any;
+        particlesDOM: any[];
+    }
 }

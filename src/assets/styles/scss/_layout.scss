@@ -5,6 +5,7 @@
     position: relative;
     border-radius: 20px;
     max-width: 800px;
+    box-sizing: border-box;
 
     &::before {
         content: '';
@@ -16,5 +17,14 @@
         border: 5px solid $indigo;
         border-radius: 20px;
         pointer-events: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .double-border {
+        overflow-x: hidden;
+        &::before {
+            content: none;
+        }
     }
 }

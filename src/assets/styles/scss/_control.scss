@@ -67,10 +67,6 @@ form {
         width: 1rem;
     }
 
-    .form-check {
-        text-align: right;
-    }
-
     .form-check-input {
         margin-left: -2em;
 
@@ -85,10 +81,8 @@ form {
     }
 }
 
-@media (max-width: 768px) {
-    form {
-        .form-check {
-            text-align: left;
-        }
+@media (max-width: 576px){
+    form  {
+        padding: 1.5rem;
     }
 }
