@@ -1,5 +1,3 @@
-import React from "react";
-
 const Homepage = () => {
 	return (
 		<div className='d-flex justify-content-center align-items-center'>
@@ -13,12 +11,15 @@ const Homepage = () => {
 					</p>
 					<div className='btn-group mt-3'>
 						<a
-							href='/control'
+							href={`${process.env.PUBLIC_URL}/control`}
 							className='btn link-button me-3 px-4'
 						>
 							Control
 						</a>
-						<a href='/display' className='btn link-button px-4'>
+						<a
+							href={`${process.env.PUBLIC_URL}/display`}
+							className='btn link-button px-4'
+						>
 							Display
 						</a>
 					</div>
