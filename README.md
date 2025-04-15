@@ -6,11 +6,11 @@ Each form input manipulates the display in some way that's relevant to the eleme
 
 This is an MVP iteration, I'd like to add other interactive elements in the future. This is an interactive/visual compliment that came to me while working on a written piece.
 
-[Tear(Drop) Homepage](teardrop/src/assets/images/teardrop-homepage.png)
+[Tear(Drop) Homepage](./src/assets/images/teardrop-homepage.png)
 
-[Tear(Drop) Control Form](teardrop/src/assets/images/teardrop-form.png)
+[Tear(Drop) Control Form](./src/assets/images/teardrop-form.png)
 
-[Tear(Drop) Display](teardrop/src/assets/images/teardrop-display.png)
+[Tear(Drop) Display](./src/assets/images/teardrop-display.png)
 
 ## Stack
 
@@ -21,7 +21,7 @@ This is an MVP iteration, I'd like to add other interactive elements in the futu
 
 ### Planning
 
-[Tear(Drop) Diagram in Figjam](teardrop/src/assets/images/teardrop-planning.png)
+[Tear(Drop) Diagram in Figjam](./src/assets/images/teardrop-planning.png)
 
 The usage goal was:
 

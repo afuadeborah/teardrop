@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Tear(Drop) Redirecting</title>
+        <!-- Single Page Apps for GitHub Pages
+            MIT License https://github.com/rafgraph/spa-github-pages
+        
+            This script takes the current URL and converts the path and query
+            string into just a query string, and then redirects the browser
+        to the new URL with only a query string and hash fragment -->
+        <script>
+            var pathSegmentsToKeep = 1;
+
+            var l = window.location;
+            l.replace(
+                l.protocol + '//' + l.hostname + ( l.port ? ':' + l.port : '' ) +
+                l.pathname.split( '/' ).slice( 0, 1 + pathSegmentsToKeep ).join( '/' ) + '/?/' +
+                l.pathname.slice( 1 ).split( '/' ).slice( pathSegmentsToKeep ).join( '/' ).replace( /&/g, '~and~' ) +
+                ( l.search ? '&' + l.search.slice( 1 ).replace( /&/g, '~and~' ) : '' ) +
+                l.hash
+            );
+        </script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <h1>Redirecting</h1>
+    </body>
+
+</html>
